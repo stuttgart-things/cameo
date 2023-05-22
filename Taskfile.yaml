@@ -1,0 +1,44 @@
+---
+version: "3"
+vars:
+  PROJECT_NAME: cameo
+  GIT_COMMIT:
+    sh: git log -n 1 --format=%h
+  DATE:
+    sh: date +"%y.%m%d.%H%M"
+  MAJOR: 0
+  MINOR: 1
+  PATCH: 10
+  #HOST: "http://localhost"
+  #PORT: "5001"
+    
+
+tasks:
+
+  lint:
+    desc: Lint code
+    cmds:
+      - cmd: golangci-lint run
+        ignore_error: true
+
+  test:
+    desc: Test code
+    cmds:
+      - cmd: go test -v
+
+  build:
+    desc: Build the app
+    cmds:
+      - go mod tidy
+      - go install -v -ldflags="-X github.com/stuttgart-things/dev/{{.PROJECT_NAME}}/cmd.commit={{ .GIT_COMMIT }} -X github.com/stuttgart-things/dev/{{.PROJECT_NAME}}/cmd.date={{ .DATE }} -X github.com/stuttgart-things/dev/{{.PROJECT_NAME}}/cmd.version={{ .MAJOR }}.{{ .MINOR }}.{{ .PATCH }}"
+
+  release:
+    desc: Build amd release to gitlab
+    deps: [push]
+    cmds:
+      - git tag -a v{{ .MAJOR }}.{{ .MINOR }}.{{ .PATCH }} -m "build release for v{{ .MAJOR }}.{{ .MINOR }}.{{ .PATCH }}"
+      - goreleaser release --skip-publish --snapshot --clean
+      - goreleaser release --clean
+
+
+
