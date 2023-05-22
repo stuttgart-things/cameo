@@ -3,7 +3,7 @@ module github.com/stuttgart-things/cameo
 go 1.18
 
 require (
-	codehub.sva.de/Lab/stuttgart-things/dev/sthingsCli v0.0.89
+	github.com/stuttgart-things/dev/sthingsCli v0.0.89
 	github.com/fatih/color v1.13.0
 	github.com/jedib0t/go-pretty/v6 v6.4.0
 	github.com/spf13/cobra v1.6.1
@@ -11,7 +11,7 @@ require (
 )
 
 require (
-	codehub.sva.de/Lab/stuttgart-things/dev/sthingsBase v0.0.112 // indirect
+	github.com/stuttgart-things/dev/sthingsBase v0.0.112 // indirect
 	github.com/AlecAivazis/survey/v2 v2.3.6 // indirect
 	github.com/armon/go-metrics v0.4.0 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
@@ -104,6 +104,6 @@ require (
 )
 
 replace (
-	codehub.sva.de/Lab/stuttgart-things/dev/sthingsBase => codehub.sva.de/Lab/stuttgart-things/dev/sthingsBase.git v0.0.112
-	codehub.sva.de/Lab/stuttgart-things/dev/sthingsCli => codehub.sva.de/Lab/stuttgart-things/dev/sthingsCli.git v0.0.89
+	github.com/stuttgart-things/dev/sthingsBase => github.com/stuttgart-things/dev/sthingsBase.git v0.0.112
+	github.com/stuttgart-things/dev/sthingsCli => github.com/stuttgart-things/dev/sthingsCli.git v0.0.89
 )
