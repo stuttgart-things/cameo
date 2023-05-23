@@ -4,8 +4,8 @@ before:
     - go mod tidy
 
 gitlab_urls:
-  api: https://codehub.sva.de/api/v4/
-  download: https://codehub.sva.de
+  api: https://github.com/api/v4/
+  download: https://github.com
   skip_tls_verify: true
   
 builds:
