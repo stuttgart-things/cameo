@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 Ana Calva ana.calva@sva.de
+Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 
 */
 package cmd
@@ -47,7 +47,5 @@ func init() {
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
-
-
 
 

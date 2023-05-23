@@ -13,7 +13,7 @@ import (
     "os"
     "encoding/json"
 	"github.com/spf13/cobra"
-	sthingsCli "codehub.sva.de/Lab/stuttgart-things/dev/sthingsCli"
+	sthingsCli "github.com/stuttgart-things/sthingsCli"
     "github.com/jedib0t/go-pretty/v6/table"
 )
 
@@ -106,4 +106,3 @@ func create_table(names []Names){
     tw.Render()
     fmt.Println("\n")
 }
-

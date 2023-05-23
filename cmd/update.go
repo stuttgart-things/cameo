@@ -1,4 +1,5 @@
 /*
+/*
 Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 
 */
@@ -13,7 +14,7 @@ import (
 	"github.com/spf13/cobra"
 	"log"
 	"encoding/json"
-	sthingsCli "codehub.sva.de/Lab/stuttgart-things/dev/sthingsCli"
+	sthingsCli "github.com/stuttgart-things/sthingsCli"
 )
 
 type NameUpdate struct {
@@ -75,4 +76,3 @@ func update_name() {
     fmt.Println(bodyString)
 	}
 }
-

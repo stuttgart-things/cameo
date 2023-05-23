@@ -12,7 +12,7 @@ import (
     "io/ioutil"
     "net/http"
 	"github.com/spf13/cobra"
-	sthingsCli "codehub.sva.de/Lab/stuttgart-things/dev/sthingsCli"
+	sthingsCli "github.com/stuttgart-things/sthingsCli"
 )
 
 type NameDelete struct {
