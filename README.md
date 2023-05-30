@@ -74,10 +74,10 @@ HOST=http://localhost PORT=5001 cameo delete
 ## Redis Account - Cameo-API connection
 
 The credentials for the redis account into which you will connect are defined within the enviornment variables of "Cameo-API". There you can find and modify the following variables:
-- **REDIS_KEY_VALUE**  - The name of the key where the desired values are stored.
-- **REDIS_CONNECTION_PORT**  - The port through which the connection with redis will be established.
-- **REDIS_CONNECTION_HOST**  - The host with which the connection is desired.
-- **REDIS_CONNECTION_PASSWORD**  - The password to connect with your redis account.
+- **REDIS_KEY**  - The name of the key where the desired values are stored.
+- **REDIS_PORT**  - The port through which the connection with redis will be established.
+- **REDIS_SERVER**  - The host with which the connection is desired.
+- **REDIS_PASSWORD**  - The password to connect with your redis account.
 
 Additionally, you can also modify the port through which you communicate with "Cameo-API"
 - **API_PORT_LOCAL** 

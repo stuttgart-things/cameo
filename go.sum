@@ -172,8 +172,6 @@ github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.7.4 h1:wZRexSlwd7ZXfKINDLsO4r7WBt3gTKONc6K/VesHvHM=
 github.com/stretchr/testify v1.7.4/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
-github.com/stuttgart-things/sthingsCli v0.1.5 h1:uuqPSmplKkFLXHPCWv4F5F4XJ4oXBZvkPJEnlkBEhMk=
-github.com/stuttgart-things/sthingsCli v0.1.5/go.mod h1:GZKV5UKNoIwLgzA0SHOVLbunXnQfl6Okw1g5u7XFOMk=
 github.com/stuttgart-things/sthingsCli v0.1.6 h1:PUeGJ2Tzi5W4p5oLz9uZh6JxxqA40qxRZQbhN9VWN5U=
 github.com/stuttgart-things/sthingsCli v0.1.6/go.mod h1:GZKV5UKNoIwLgzA0SHOVLbunXnQfl6Okw1g5u7XFOMk=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
